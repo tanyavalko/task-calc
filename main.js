@@ -17,45 +17,45 @@ getSel('.btn-primary').addEventListener('click', function() {
 getSel('.suma').addEventListener('click', function() {
     let f1 = document.forms['f1'];
     let sumaFirst = 0;
-        for (let i = 0; i < f1.length; i++) {
+        for (let i = 0; i < f1.elements.length; i++) {
             sumaFirst = +getSel('.sum-one').value + +getSel('.sum-second').value + +getSel('.sum-third').value;
         }
         getSel('.first-value').innerText = sumaFirst;
     let f2 = document.forms['f2'];
     let sumaSecond = 0;
-        for (let i = 0; i < f2.length; i++) {
+        for (let i = 0; i < f2.elements.length; i++) {
             sumaSecond = +getSel('.sum-one2').value + +getSel('.sum-second2').value + +getSel('.sum-third2').value; 
         }
         getSel('.second-value').innerText = sumaSecond;
     let f3 = document.forms['f3'];
     let sumaThird = 0;
-        for (let i = 0; i < f3.length; i++) {
+        for (let i = 0; i < f3.elements.length; i++) {
             sumaThird = +getSel('.sum-one3').value + +getSel('.sum-second3').value + +getSel('.sum-third3').value;
         }
          getSel('.third-value').innerText = sumaThird;
 })
 
-//calculating multiply of numbers 
+//calculating multiply of numbers
 getSel('.multiply').addEventListener('click', function() {
     let f1 = document.forms['f1'];
     let sumaFirst = 0;
-        for (let i = 0; i < f1.length; i++) {
-            sumaFirst = +getSel('.sum-one').value * +getSel('.sum-second').value * +getSel('.sum-third').value;
+        for (let i = 0; i < f1.elements.length; i++) {
+             sumaFirst = +getSel('.sum-one').value * +getSel('.sum-second').value * +getSel('.sum-third').value;
         }
-        getSel('.first-value').innerText = sumaFirst;
+    getSel('.first-value').innerText = sumaFirst;
     let f2 = document.forms['f2'];
     let sumaSecond = 0;
-        for (let i = 0; i < f2.length; i++) {
+        for (let i = 0; i < f2.elements.length; i++) {
             sumaSecond = +getSel('.sum-one2').value * +getSel('.sum-second2').value * +getSel('.sum-third2').value; 
         }
-        getSel('.second-value').innerText = sumaSecond;
+    getSel('.second-value').innerText = sumaSecond;
     let f3 = document.forms['f3'];
     let sumaThird = 0;
-        for (let i = 0; i < f3.length; i++) {
+        for (let i = 0; i < f3.elements.length; i++) {
             sumaThird = +getSel('.sum-one3').value * +getSel('.sum-second3').value * +getSel('.sum-third3').value;
         }
-         getSel('.third-value').innerText = sumaThird;
-})
+    getSel('.third-value').innerText = sumaThird;    
+});
 
 //change background color for div
 let bgColor = false;
@@ -67,7 +67,7 @@ getSel('.first-color').addEventListener('click', function(){
     if(bgColor){
         getSel('.first-input-group').style.backgroundColor = `rgb(${r},${g},${b})`;
     }else{
-        getSel('.first-input-group').style.backgroundColor = 'white';
+        getSel('.first-input-group').style.backgroundColor = 'rgb(243, 243, 243)';
     }
 })
 
@@ -79,7 +79,7 @@ getSel('.second-color').addEventListener('click', function(){
     if(bgColor){
         getSel('.second-input-group').style.backgroundColor = `rgb(${r},${g},${b})`;
     }else{
-        getSel('.second-input-group').style.backgroundColor = 'white';
+        getSel('.second-input-group').style.backgroundColor = 'rgb(243, 243, 243)';
     }
 })
 
@@ -91,7 +91,7 @@ getSel('.third-color').addEventListener('click', function(){
     if(bgColor){
         getSel('.third-input-group').style.backgroundColor = `rgb(${r},${g},${b})`;
     }else{
-        getSel('.third-input-group').style.backgroundColor = 'white';
+        getSel('.third-input-group').style.backgroundColor = 'rgb(243, 243, 243)';
     }
 })
 
