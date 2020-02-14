@@ -1,5 +1,6 @@
 let getSel = x => document.querySelector(x);
 
+//click on button for open dialog modal  `Open calc`
 let isBlock = false;
 getSel('.btn-primary').addEventListener('click', function() {
     isBlock = !isBlock;
@@ -12,6 +13,7 @@ getSel('.btn-primary').addEventListener('click', function() {
     }
 });
 
+//calculating sum  of numbers 
 getSel('.suma').addEventListener('click', function() {
     let f1 = document.forms['f1'];
     let sumaFirst = 0;
@@ -33,6 +35,7 @@ getSel('.suma').addEventListener('click', function() {
          getSel('.third-value').innerText = sumaThird;
 })
 
+//calculating multiply of numbers 
 getSel('.multiply').addEventListener('click', function() {
     let f1 = document.forms['f1'];
     let sumaFirst = 0;
@@ -54,6 +57,7 @@ getSel('.multiply').addEventListener('click', function() {
          getSel('.third-value').innerText = sumaThird;
 })
 
+//change background color for div
 let bgColor = false;
 getSel('.first-color').addEventListener('click', function(){
     let r = Math.round(Math.random()*255);
