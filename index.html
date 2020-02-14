@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary">Open calc</button>
+    <div class="container">
+        <div class="top-block">
+            <div class="title">
+                <h1>Simple Calc</h1>
+            </div>
+            <div class="title-results">Results</div>
+        </div>
+        <div class="middle-block">
+            <div class="checkbox">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" class="first-color">
+                    </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" class="second-color">
+                    </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input" class="third-color">
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <form name="f1" class="first-input-group">
+                        <input type="text" class="form-control sum-one" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    <input type="text" class="form-control sum-second" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    <input type="text" class="form-control sum-third" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    </form>
+                </div>
+                <div>
+                    <form name="f2" class="second-input-group">
+                        <input type="text" class="form-control sum-one2" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    <input type="text" class="form-control sum-second2" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    <input type="text" class="form-control sum-third2" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    </form>
+                </div>
+                <div>
+                    <form name="f3" class="third-input-group">
+                        <input type="text" class="form-control sum-one3" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    <input type="text" class="form-control sum-second3" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    <input type="text" class="form-control sum-third3" placeholder="Write here..." aria-label=""
+                        aria-describedby="addon-wrapping" value="">
+                    </form>
+                </div>
+            </div>
+            <div class="results">
+                <div class="first-value"></div>
+                <div class="second-value"></div>
+                <div class="third-value"></div>
+            </div>
+        </div>
+        <div class="bottom-block">
+            <div>Choose box</div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio" aria-label="Radio button for following text input" class="suma"><p>Sum</p> 
+                    </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="radio" aria-label="Radio button for following text input" class="multiply"><p>Multiply</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
