@@ -1,3 +1,11 @@
+.wrapper{
+    padding: 20px;
+}
+
+.btn-primary{
+    margin-bottom: 20px;
+}
+
 .container{
     width: 700px;
     height: 440px;
@@ -19,8 +27,11 @@
 }
 
 .title{
-    color: blue;
     margin-left: 38px;
+}
+
+.title h1{
+    color: blue;
 }
 
 .title-results{
@@ -32,7 +43,7 @@
     align-items: center;
     border: 1px solid #ced4da;
     color: blue;
-    line-height: 25px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -48,7 +59,7 @@
 }
 
 .middle-block .input-group{
-    width: 500px;
+    max-width: 500px;
 }
 
 .middle-block .input-group form{
@@ -78,13 +89,13 @@
     align-items: center;
     border: 1px solid #ced4da;
     color: blue;
-    line-height: 25px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .bottom-block div:first-child{
     color: blue;
-    line-height: 25px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -129,7 +140,53 @@
 }
 
 @media screen and (max-width: 575px) {
+
+    ::-webkit-input-placeholder{
+        font-size: 5px;
+    }
+
     .container{
-        width: 510px;
+        width: 330px;
+        height: 387px;
+    }
+    .middle-block .input-group form{
+        width: 180px;
+    }
+
+    .middle-block .input-group {
+        width: 180px;
+    }
+
+    .middle-block .input-group .form-control{
+        width: 49px;
+    }
+
+    .top-block{
+        width: 278px;
+    }
+
+    .results div{
+        width: 60px;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .title-results{
+        font-size: 10px;
+        width: 60px;
+    }
+
+    .bottom-block div:first-child{
+        font-size: 10px;
+    }
+
+    .bottom-block .input-group-text{
+        width: 65px;
+    }
+
+    .bottom-block .input-group-text p{
+       font-size: 8px;
     }
 }
