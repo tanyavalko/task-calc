@@ -33,7 +33,7 @@ getSel('.suma').addEventListener('click', function() {
             sumaThird = +getSel('.sum-one3').value + +getSel('.sum-second3').value + +getSel('.sum-third3').value;
         }
          getSel('.third-value').innerText = sumaThird;
-})
+});
 
 //calculating multiply of numbers
 getSel('.multiply').addEventListener('click', function() {
@@ -58,40 +58,42 @@ getSel('.multiply').addEventListener('click', function() {
 });
 
 //change background color for div
-let bgColor = false;
+let bgColorFirst = false;
 getSel('.first-color').addEventListener('click', function(){
     let r = Math.round(Math.random()*255);
     let g = Math.round(Math.random()*255);
     let b = Math.round(Math.random()*255);
-    bgColor = !bgColor;
-    if(bgColor){
+    bgColorFirst = !bgColorFirst;
+    if(bgColorFirst){
         getSel('.first-input-group').style.backgroundColor = `rgb(${r},${g},${b})`;
     }else{
         getSel('.first-input-group').style.backgroundColor = 'rgb(243, 243, 243)';
     }
-})
+});
 
+let bgColorSecond = false;
 getSel('.second-color').addEventListener('click', function(){
     let r = Math.round(Math.random()*255);
     let g = Math.round(Math.random()*255);
     let b = Math.round(Math.random()*255);
-    bgColor = !bgColor;
-    if(bgColor){
+    bgColorSecond = !bgColorSecond;
+    if(bgColorSecond){
         getSel('.second-input-group').style.backgroundColor = `rgb(${r},${g},${b})`;
     }else{
         getSel('.second-input-group').style.backgroundColor = 'rgb(243, 243, 243)';
     }
-})
+});
 
+let bgColorThird = false;
 getSel('.third-color').addEventListener('click', function(){
     let r = Math.round(Math.random()*255);
     let g = Math.round(Math.random()*255);
     let b = Math.round(Math.random()*255);
-    bgColor = !bgColor;
-    if(bgColor){
+    bgColorThird = !bgColorThird;
+    if(bgColorThird){
         getSel('.third-input-group').style.backgroundColor = `rgb(${r},${g},${b})`;
     }else{
         getSel('.third-input-group').style.backgroundColor = 'rgb(243, 243, 243)';
     }
-})
+});
 
