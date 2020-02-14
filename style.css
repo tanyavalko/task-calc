@@ -43,7 +43,7 @@
     align-items: center;
     border: 1px solid #ced4da;
     color: blue;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -89,13 +89,13 @@
     align-items: center;
     border: 1px solid #ced4da;
     color: blue;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: bold;
 }
 
 .bottom-block div:first-child{
     color: blue;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -113,6 +113,7 @@
 .bottom-block .input-group-text p{
     margin-left: 5px;
     margin-bottom: 0;
+    font-size: 17px;
 }
 
 /* adaptive */
@@ -159,6 +160,7 @@
 
     .middle-block .input-group .form-control{
         width: 49px;
+        font-size: 8px;
     }
 
     .top-block{
@@ -167,6 +169,7 @@
 
     .results div{
         width: 60px;
+        font-size: 8px;
     }
 
     .title h1{
